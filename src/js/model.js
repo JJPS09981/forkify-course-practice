@@ -75,7 +75,6 @@ export const updateServings = function (newServings) {
 };
 
 const persistBookmarks = function () {
-  console.log(state.bookmarks);
   localStorage.setItem('bookmarks', JSON.stringify(state.bookmarks));
 };
 

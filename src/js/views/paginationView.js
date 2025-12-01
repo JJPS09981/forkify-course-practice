@@ -18,10 +18,8 @@ class PaginationView extends View {
     return `<button data-goto="${
       curPage + 1
     }" class="btn--inline pagination__btn--next">
-            <span> 第 ${curPage + 1} 頁</span>
-            <svg class="search__icon">
-              <use href="${icons}#icon-arrow-right"></use>
-            </svg>
+            <span> 第 ${curPage + 1}頁</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#48752C"><path d="M630-444H192v-72h438L429-717l51-51 288 288-288 288-51-51 201-201Z"/></svg>
           </button>`;
   }
 
@@ -29,9 +27,7 @@ class PaginationView extends View {
     return `<button data-goto="${
       curPage - 1
     }" class="btn--inline pagination__btn--prev">
-            <svg class="search__icon">
-              <use href="${icons}#icon-arrow-left"></use>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#48752C"><path d="m330-444 201 201-51 51-288-288 288-288 51 51-201 201h438v72H330Z"/></svg>
             <span> 第 ${curPage - 1} 頁</span>
           </button>`;
   }
