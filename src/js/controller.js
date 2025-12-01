@@ -124,3 +124,25 @@ const init = function () {
   addRecipeView.addHandlerUpload(controlAddRecipe);
 };
 init();
+
+const btnTheme = document.querySelector('.btn--theme');
+const THEME_KEY = 'forkify-theme';
+
+const applyTheme = theme => {
+  if (theme === 'dark') document.body.classList.add('dark-mode');
+  else document.body.classList.remove('dark-mode');
+};
+
+const initTheme = () => {
+  const saved = localStorage.getItem(THEME_KEY) || 'light';
+  applyTheme(saved);
+};
+
+if (btnTheme) {
+  btnTheme.addEventListener('click', () => {
+    const isDark = document.body.classList.toggle('dark-mode');
+    localStorage.setItem(THEME_KEY, isDark ? 'dark' : 'light');
+  });
+}
+
+initTheme();

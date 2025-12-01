@@ -12,6 +12,8 @@ class SearchView {
   }
 
   addHandleerSearch(handler) {
+    if (!this._parentElment) return;
+
     this._parentElment.addEventListener('submit', function (e) {
       e.preventDefault();
       handler();

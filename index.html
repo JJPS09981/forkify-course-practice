@@ -27,37 +27,43 @@
             placeholder="Search over 1,000,000 recipes..."
           />
           <button class="btn search__btn">
-            <svg class="search__icon">
+            <!-- <svg class="search__icon">
               <use href="src/img/icons.svg#icon-search"></use>
-            </svg>
+            </svg> -->
+            <img src="src/img/search.png" class="search__icon" />
             <span>搜尋</span>
           </button>
         </form>
+
+        <button class="btn--small btn--theme">
+          <span>🌙 </span>
+          <p>夜間模式</p>
+        </button>
 
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <button class="nav__btn nav__btn--add-recipe">
-                <svg class="nav__icon">
+                <!-- <svg class="nav__icon">
                   <use href="src/img/icons.svg#icon-edit"></use>
-                </svg>
+                </svg> -->
+                <img src="src/img/wirte.png" class="nav__icon" />
                 <span>新增食譜</span>
               </button>
             </li>
             <li class="nav__item">
               <button class="nav__btn nav__btn--bookmarks">
-                <svg class="nav__icon">
+                <!-- <svg class="nav__icon">
                   <use href="src/img/icons.svg#icon-bookmark"></use>
-                </svg>
+                </svg> -->
+                <img src="src/img/favorite.png" class="nav__icon" />
                 <span>書籤</span>
               </button>
               <div class="bookmarks">
                 <ul class="bookmarks__list">
                   <div class="message">
                     <div>
-                      <svg>
-                        <use href="src/img/icons.svg#icon-smile"></use>
-                      </svg>
+                      <img src="src/img/happy-face.png" />
                     </div>
                     <p>
                       No bookmarks yet. Find a nice recipe and bookmark it :)
@@ -122,14 +128,13 @@
         </div>
 
         <p class="copyright">
-          &copy; Copyright by
+          &copy; 此為
           <a
             class="twitter-link"
             target="_blank"
             href="https://twitter.com/jonasschmedtman"
             >Jonas Schmedtmann</a
-          >. Use for learning or your portfolio. Don't use to teach. Don't claim
-          as your own.
+          >. 版權所有，用於學習以及作品集.
         </p>
       </div>
 
