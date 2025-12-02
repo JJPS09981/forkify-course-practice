@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang=zh-TW><script type=importmap>{"imports":{"eyyUD":"/icons.c5b0f01c.svg"}}</script><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta http-equiv=X-UA-Compatible content="ie=edge"><link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel=stylesheet><link rel="icon shortcut" href=/favicon.38ab3f7a.png type=image/x-icon><link rel=stylesheet href=/starter.6e2bc774.css><script type=module src=/starter.419ac6a7.js></script><title>forkify // Search over 1,000,000 recipes</title><body>
+    <div class=container>
+      <header class=header>
+        <img src=/logo.0240107d.png alt=Logo class=header__logo>
+        <form class=search>
+          <input class=search__field placeholder="Search over 1,000,000 recipes...">
+          <button class="btn search__btn">
+            
+
+            <svg xmlns:xmlns=http://www.w3.org/2000/svg width=20 height=20 fill=#1f1f1f viewBox="0 -960 960 960"><path d="M765-144 526-383q-30 22-65.79 34.5T384.03-336Q284-336 214-406t-70-170 70-170 170-70 170 70 70 170.03q0 40.39-12.5 76.18T577-434l239 239ZM384-408q70 0 119-49t49-119-49-119-119-49-119 49-49 119 49 119 119 49"/></svg>
+            <span>搜尋</span>
+          </button>
+        </form>
+
+        <button class="btn--small btn--theme">
+          <svg xmlns:xmlns=http://www.w3.org/2000/svg width=20 height=20 fill=#48752c viewBox="0 -960 960 960"><path d="M479.96-144Q340-144 242-242t-98-238 97.93-238 237.83-98q13.06 0 25.65 1t25.59 3q-39 29-62 72t-23 92q0 85 58.5 143.5T648-446q49 0 92-23t72-62q2 13 3 25.59t1 25.65q0 139.9-98.04 237.83t-238 97.93m.04-72q82 0 148.78-47.07Q695.55-310.15 727-386q-20 5-39.67 8.5Q667.67-374 648-374q-113.86 0-193.93-80.07T374-648q0-19.67 3.5-39.33Q381-707 386-727q-75.85 31.45-122.93 98.22Q216-562 216-480q0 110 77 187t187 77m-14-250"/></svg>
+          <p>夜間模式</p>
+        </button>
+
+        <nav class=nav>
+          <ul class=nav__list>
+            <li class=nav__item>
+              <button class="nav__btn nav__btn--add-recipe">
+                
+                <svg xmlns:xmlns=http://www.w3.org/2000/svg width=20 height=20 fill=#48752c viewBox="0 -960 960 960"><path d="M216-144q-29.7 0-50.85-21.15T144-216v-528q0-29.7 21.15-50.85T216-816h528q29.7 0 50.85 21.15T816-744v258q-17.1-5.76-35.1-9.92T744-502v-242H216v528h241q1.88 19.52 5.94 37.26T473-144Zm0-96v24-528 242-2Zm72-48h172q4-19 10.19-36.97Q476.38-342.93 484-360H288Zm0-156h264q26-20 56-34.5t64-20.5v-17H288Zm0-156h384v-72H288ZM719.77-48Q640-48 584-104.23q-56-56.22-56-136Q528-320 584.23-376q56.22-56 136-56Q800-432 856-375.77q56 56.22 56 136Q912-160 855.77-104q-56.22 56-136 56M696-144h48v-72h72v-48h-72v-72h-48v72h-72v48h72Z"/></svg>
+                <span>新增食譜</span>
+              </button>
+            </li>
+            <li class=nav__item>
+              <button class="nav__btn nav__btn--bookmarks">
+                
+                <svg xmlns:xmlns=http://www.w3.org/2000/svg width=20 height=20 fill=#48752c viewBox="0 -960 960 960"><path d="M240-144v-600q0-29.7 21.15-50.85T312-816h336q29.7 0 50.85 21.15T720-744v600l-240-96Zm72-107 168-67 168 67v-493H312Zm0-493h336Z"/></svg>
+                <span>書籤</span>
+              </button>
+              <div class=bookmarks>
+                <ul class=bookmarks__list>
+                  <div class=message>
+                    <div></div>
+                    <p>
+                      No bookmarks yet. Find a nice recipe and bookmark it :)
+                    </p>
+                  </div>
+
+                  
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class=search-results>
+        <ul class=results>
+          
+        </ul>
+
+        <div class=pagination>
+          
+        </div>
+
+        <p class=copyright>
+          © 此為
+          <a class=twitter-link target=_blank href=https://twitter.com/jonasschmedtman>Jonas Schmedtmann</a>. 版權所有，用於學習以及作品集.
+        </p>
+      </div>
+
+      <div class=recipe>
+        <div class=message>
+          <div>
+            <svg xmlns:xmlns=http://www.w3.org/2000/svg width=20 height=20 fill=#48752c viewBox="0 -960 960 960"><path d="M612-504q25 0 42.5-17.5T672-564t-17.5-42.5T612-624t-42.5 17.5T552-564t17.5 42.5T612-504m-264 0q25 0 42.5-17.5T408-564t-17.5-42.5T348-624t-42.5 17.5T288-564t17.5 42.5T348-504m131.9 240q69.1 0 125.6-39T683-408h-79q-19.92 33.3-52.96 52.65T480-336t-71.04-19.35T356-408h-79q21 66 77.4 105t125.5 39m.38 168Q401-96 331-126t-122.5-82.5T126-330.96t-30-149.5 30-149.04 82.5-122T330.96-834t149.5-30 149.04 30 122 82.5T834-629.28q30 69.73 30 149Q864-401 834-331t-82.5 122.5T629.28-126q-69.73 30-149 30m-.28-72q130 0 221-91t91-221-91-221-221-91-221 91-91 221 91 221 221 91"/></svg>
+          </div>
+          <p>Start by searching for a recipe or an ingredient. Have fun!</p>
+        </div>
+
+        
+
+        
+
+        
+      </div>
+    </div>
+
+    <div class="hidden overlay"></div>
+    <div class="add-recipe-window hidden">
+      <button class=btn--close-modal>×</button>
+      <form class=upload>
+        <div class=upload__column>
+          <h3 class=upload__heading>Recipe data</h3>
+          <label>Title</label>
+          <input value=TEST23 required name=title>
+          <label>URL</label>
+          <input value=TEST232 required name=sourceUrl>
+          <label>Image URL</label>
+          <input value=TEST23 required name=image>
+          <label>Publisher</label>
+          <input value=TEST23 required name=publisher>
+          <label>Prep time</label>
+          <input value=23 required name=cookingTime type=number>
+          <label>Servings</label>
+          <input value=23 required name=servings type=number>
+        </div>
+
+        <div class=upload__column>
+          <h3 class=upload__heading>Ingredients</h3>
+          <label>Ingredient 1</label>
+          <input value=0.5,kg,Rice required name=ingredient-1 placeholder="Format: 'Quantity,Unit,Description'">
+          <label>Ingredient 2</label>
+          <input value=1,,Avocado name=ingredient-2 placeholder="Format: 'Quantity,Unit,Description'">
+          <label>Ingredient 3</label>
+          <input value=,,salt name=ingredient-3 placeholder="Format: 'Quantity,Unit,Description'">
+          <label>Ingredient 4</label>
+          <input name=ingredient-4 placeholder="Format: 'Quantity,Unit,Description'">
+          <label>Ingredient 5</label>
+          <input name=ingredient-5 placeholder="Format: 'Quantity,Unit,Description'">
+          <label>Ingredient 6</label>
+          <input name=ingredient-6 placeholder="Format: 'Quantity,Unit,Description'">
+        </div>
+
+        <button class="btn upload__btn">
+          <svg><use href=/icons.c5b0f01c.svg#icon-upload-cloud /></svg>
+          
+        </button>
+      </form>
+    </div>
+  
+
