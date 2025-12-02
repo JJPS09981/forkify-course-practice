@@ -9,7 +9,6 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" />
-
     <link rel="stylesheet" href="src/sass/main.scss" />
     <script type="module" src="src/js/controller.js"></script>
 
@@ -308,75 +307,95 @@
       </div>
     </div>
 
-    <div class="overlay hidden"></div>
+    <div class="hidden overlay"></div>
     <div class="add-recipe-window hidden">
-      <button class="btn--close-modal">&times;</button>
+      <button class="btn--close-modal">×</button>
       <form class="upload">
         <div class="upload__column">
-          <h3 class="upload__heading">Recipe data</h3>
-          <label>Title</label>
+          <h3 class="upload__heading">食譜資料</h3>
+
+          <label>料理名稱</label>
           <input value="TEST23" required name="title" type="text" />
-          <label>URL</label>
+
+          <label>食譜網址</label>
           <input value="TEST232" required name="sourceUrl" type="text" />
-          <label>Image URL</label>
+
+          <label>圖片網址</label>
           <input value="TEST23" required name="image" type="text" />
-          <label>Publisher</label>
+
+          <label>發布者</label>
           <input value="TEST23" required name="publisher" type="text" />
-          <label>Prep time</label>
+
+          <label>準備時間（分鐘）</label>
           <input value="23" required name="cookingTime" type="number" />
-          <label>Servings</label>
+
+          <label>份量</label>
           <input value="23" required name="servings" type="number" />
         </div>
 
         <div class="upload__column">
-          <h3 class="upload__heading">Ingredients</h3>
-          <label>Ingredient 1</label>
+          <h3 class="upload__heading">食材</h3>
+
+          <label>食材 1</label>
           <input
             value="0.5,kg,Rice"
-            type="text"
             required
             name="ingredient-1"
-            placeholder="Format: 'Quantity,Unit,Description'"
+            placeholder="格式：'數量,單位,食材名稱'"
+            type="text"
           />
-          <label>Ingredient 2</label>
+
+          <label>食材 2</label>
           <input
             value="1,,Avocado"
-            type="text"
             name="ingredient-2"
-            placeholder="Format: 'Quantity,Unit,Description'"
+            placeholder="格式：'數量,單位,食材名稱'"
+            type="text"
           />
-          <label>Ingredient 3</label>
+
+          <label>食材 3</label>
           <input
             value=",,salt"
-            type="text"
             name="ingredient-3"
-            placeholder="Format: 'Quantity,Unit,Description'"
-          />
-          <label>Ingredient 4</label>
-          <input
+            placeholder="格式：'數量,單位,食材名稱'"
             type="text"
+          />
+
+          <label>食材 4</label>
+          <input
             name="ingredient-4"
-            placeholder="Format: 'Quantity,Unit,Description'"
-          />
-          <label>Ingredient 5</label>
-          <input
+            placeholder="格式：'數量,單位,食材名稱'"
             type="text"
+          />
+
+          <label>食材 5</label>
+          <input
             name="ingredient-5"
-            placeholder="Format: 'Quantity,Unit,Description'"
-          />
-          <label>Ingredient 6</label>
-          <input
+            placeholder="格式：'數量,單位,食材名稱'"
             type="text"
+          />
+
+          <label>食材 6</label>
+          <input
             name="ingredient-6"
-            placeholder="Format: 'Quantity,Unit,Description'"
+            placeholder="格式：'數量,單位,食材名稱'"
+            type="text"
           />
         </div>
 
         <button class="btn upload__btn">
-          <svg>
-            <use href="src/img/icons.svg#icon-upload-cloud"></use>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20px"
+            viewBox="0 -960 960 960"
+            width="20px"
+            fill="#48752C"
+          >
+            <path
+              d="M240-192q-80 0-136-56.5T48-385q0-76 51.5-131.5T227-576q23.43-85.75 93.7-138.87Q390.98-768 480-768q107 0 185.5 68.5T744-528q70 0 119 49t49 118q0 70.42-49 119.71Q814-192 744-192H516q-29.7 0-50.85-21.15Q444-234.3 444-264v-174l-57 57-51-51 144-144 144 144-51 51-57-57v174h228q40.32 0 68.16-27.77 27.84-27.78 27.84-68Q840-400 812.16-428q-27.84-28-68.16-28h-72v-72q0-73-57.5-120.5t-135-47.5Q402-696 348-639.5T283-504h-43q-49.71 0-84.86 35.2-35.14 35.2-35.14 85t35.14 84.8q35.15 35 84.86 35h132v72H240Zm240-246Z"
+            />
           </svg>
-          <span>Upload</span>
+          <span>上傳</span>
         </button>
       </form>
     </div>
